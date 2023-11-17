@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="14F1509" minimumToolsVersion="Xcode 4.3">
+    <entity name="Blog" representedClassName="Blog" syncable="YES">
+        <attribute name="blogURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hasBlog" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <entity name="Chat" representedClassName="Chat" syncable="YES">
+        <attribute name="hasChat" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <entity name="Design" representedClassName="Design" syncable="YES">
+        <attribute name="blackStatusBar" optional="YES" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
+        <attribute name="navColor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="navTint" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="navTitleColor" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Exercises" representedClassName="Exercises" syncable="YES">
+        <attribute name="circuitID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="exerciseID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fullDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fullExecution" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="icon" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="instruction" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isCircuit" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isDone" optional="YES" attributeType="Boolean" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="load" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="muscle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="repeat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rest" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="serie" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trainingID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="treineeID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="video" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="FeaturedImages" representedClassName="FeaturedImages" syncable="YES">
+        <attribute name="imagesCount" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="isVerified" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <entity name="History" representedClassName="History" syncable="YES">
+        <attribute name="endDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isSync" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="trainingID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trainingName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="treineeID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userDescription" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="LastUpdates" representedClassName="LastUpdates" syncable="YES">
+        <attribute name="blog" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="chat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="design" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="featuredImages" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="radio" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trainee" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trainerInfo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="training" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userProfile" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Messages" representedClassName="Messages" syncable="YES">
+        <attribute name="apiKey" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="created" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="isSync" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="message" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="messageID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="receiverID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="senderID" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="PersonalTreinees" representedClassName="PersonalTreinees" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastUpdate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="treineeID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unreadMessages" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Radio" representedClassName="Radio" syncable="YES">
+        <attribute name="hasRadio" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="key1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="key2" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="TrainerInfo" representedClassName="TrainerInfo" syncable="YES">
+        <attribute name="biography" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="birthday" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cnpj" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cref" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="facebook" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="twitter" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="website" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Training" representedClassName="Training" syncable="YES">
+        <attribute name="difficulty" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="expireDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fullDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="trainingID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="treineeID" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES">
+        <attribute name="apiKey" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="birthday" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createAt" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="height" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="level" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="trainerID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weight" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Blog" positionX="-911" positionY="171" width="128" height="73"/>
+        <element name="Chat" positionX="-1244" positionY="-22" width="128" height="58"/>
+        <element name="Design" positionX="-911" positionY="41" width="128" height="103"/>
+        <element name="Exercises" positionX="-576" positionY="-45" width="128" height="358"/>
+        <element name="FeaturedImages" positionX="-747" positionY="-63" width="128" height="73"/>
+        <element name="History" positionX="-749" positionY="-216" width="128" height="133"/>
+        <element name="LastUpdates" positionX="-1080" positionY="-216" width="128" height="178"/>
+        <element name="Messages" positionX="-1244" positionY="-214" width="128" height="163"/>
+        <element name="PersonalTreinees" positionX="-1244" positionY="59" width="128" height="148"/>
+        <element name="Radio" positionX="-749" positionY="171" width="128" height="88"/>
+        <element name="TrainerInfo" positionX="-911" positionY="-216" width="128" height="238"/>
+        <element name="Training" positionX="-576" positionY="-213" width="128" height="148"/>
+        <element name="User" positionX="-1080" positionY="-28" width="128" height="238"/>
+    </elements>
+</model>

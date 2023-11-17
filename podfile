@@ -1,0 +1,8 @@
+ target 'newsthanke2' do
+platform :ios, '11.0'
+   pod 'XLForm', '~> 4.2.0'
+	 pod 'AFNetworking', '~> 4.0'
+	 pod 'SVProgressHUD', '~> 2.2'
+	 pod 'SDWebImage', '~> 5.9'
+	 pod "youtube-ios-player-helper", "~> 1.0.3"
+  end

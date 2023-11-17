@@ -1,0 +1,95 @@
+//
+//  RadioKit.h
+//  RadioKit  aka  Stormy's Radio Kit  (SRK)
+//
+//  Created by Brian Stormont on 11/24/09.
+//  Copyright 2009 Stormy Productions. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+enum {
+	SRK_STATUS_STOPPED = 0,
+	SRK_STATUS_CONNECTING,
+	SRK_STATUS_BUFFERING,
+	SRK_STATUS_PLAYING,
+	SRK_STATUS_PAUSED,
+};
+
+@protocol StormysRadioKitDelegate
+@optional
+- (void) SRKConnecting;
+- (void) SRKIsBuffering;
+- (void) SRKPlayStarted;
+- (void) SRKPlayStopped;
+- (void) SRKPlayPaused;
+- (void) SRKNoNetworkFound;
+- (void) SRKMetaChanged;
+- (void) SRKBadContent;
+- (void) SRKMissingContent;
+- (void) SRKFileComplete;   // sent when a downloadable file has finished playing
+- (void) SRKURLNotFound;
+- (void) SRKQueueExhausted;
+- (void) SRKAudioSuspended;
+- (void) SRKAudioResumed;
+@end
+
+@interface RadioKit : NSObject{
+	id delegate;
+}
+@property (nonatomic,retain) id delegate;
+@property (nonatomic,readonly) NSString *currTitle;
+@property (nonatomic,readonly) NSString *currUrl;
+@property (nonatomic, readonly) NSUInteger throttledFileLengthInSeconds;
+@property (nonatomic, readonly) bool isFileSeekAllowed;
+
+- (bool) authenticateLibraryWithKey1: (uint32_t)key1 andKey2: (uint32_t)key2;
+- (void) setBufferWaitTime: (NSUInteger) waitTime;		// How much audio to accumulate (in seconds) in the buffer before playback starts
+
+- (void) setStreamUrl: (NSString *)url isFile:(bool)isFile;  // sets the URL and if it is new, stops and restarts the stream
+- (void) setStreamURlWithOutRestart: (NSString *)url; // only changes the URL - does not try to restart the stream
+- (NSString *) currStream;
+- (void) stopStream;
+- (void) pauseStream;
+- (void) startStream;
+- (int) getStreamStatus;
+- (bool) isAudioPlaying;  // is audio playing - this is independent of the stream status of "playing" as we might not have a connection but still be playing from the buffer
+
+
+- (void) rewind: (NSUInteger)seconds;
+- (void) fastForward: (NSUInteger)seconds;
+
+- (BOOL) isFastForwardAllowed: (NSUInteger) seconds;
+- (BOOL) isRewindAllowed: (NSUInteger) seconds;
+
+// Buffer statistics
+- (NSUInteger) maxBufferSize;
+- (NSUInteger) currBufferUsage;
+- (NSUInteger) currBufferPlaying;
+- (NSUInteger) currBufferUsageInSeconds;
+- (NSUInteger) maxBufferUsageInSeconds;
+- (NSUInteger) timeShift;  // returns number of seconds we are time shifted in the past
+- (NSUInteger) bufferByteOffset;  // returns offset at which the buffer starts ( for file downloads)
+- (NSUInteger) filePlayTime; // current time offset we are in playing a file
+- (NSUInteger) bufferWaitTime;
+
+// Ice-cast / Shoutcast info field
+- (NSInteger) bitRate;
+- (char *) streamFormat;
+- (NSString *) genre;
+
+// Used to control fetching meta data from XML server (AudioVault XML formating)
+- (void) setXMLMetaURL: (NSString *)url;
+- (void) beginXMLMeta;
+- (void) endXMLMeta;
+- (NSString *) titleWithoutArtist;
+- (NSString *) artist;
+- (void) setStationTimeZone: (NSString *)timeZone;
+- (void) setXmlDelay: (NSTimeInterval) delay;
+
+// misc
+- (void) setUserAgent: (NSString *) string;
+- (NSString *) version;
+- (void) setDataTimeout: (NSUInteger) time;
+
+@end

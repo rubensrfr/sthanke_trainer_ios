@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19E287" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="Blog" representedClassName="Blog" syncable="YES">
+        <attribute name="blogURL" optional="YES" attributeType="String"/>
+        <attribute name="hasBlog" optional="YES" attributeType="Boolean" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="BlogFeeds" representedClassName="BlogFeeds" syncable="YES">
+        <attribute name="content" optional="YES" attributeType="String"/>
+        <attribute name="descricao" optional="YES" attributeType="String"/>
+        <attribute name="guid" optional="YES" attributeType="String"/>
+        <attribute name="link" optional="YES" attributeType="String"/>
+        <attribute name="pubDate" optional="YES" attributeType="String"/>
+        <attribute name="titulo" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Chat" representedClassName="Chat" syncable="YES">
+        <attribute name="hasChat" optional="YES" attributeType="Boolean" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="ClassSchedule" representedClassName="ClassSchedule" syncable="YES">
+        <attribute name="hasClassSchedule" optional="YES" attributeType="Boolean" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="ClassScheduleItem" representedClassName="ClassScheduleItem" syncable="YES">
+        <attribute name="amount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO"/>
+        <attribute name="classScheduleID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO"/>
+        <attribute name="duration" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="objective" optional="YES" attributeType="String"/>
+        <attribute name="room" optional="YES" attributeType="String"/>
+        <attribute name="startAt" optional="YES" attributeType="String"/>
+        <attribute name="teacher" optional="YES" attributeType="String"/>
+        <attribute name="weekday" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="Design" representedClassName="Design" syncable="YES">
+        <attribute name="blackStatusBar" optional="YES" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="NO"/>
+        <attribute name="navColor" optional="YES" attributeType="String"/>
+        <attribute name="navTint" optional="YES" attributeType="String"/>
+        <attribute name="navTitleColor" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="ExerciseAccount" representedClassName="ExerciseAccount" syncable="YES">
+        <attribute name="circuitID" optional="YES" attributeType="String"/>
+        <attribute name="exerciseID" optional="YES" attributeType="String"/>
+        <attribute name="fullDescription" optional="YES" attributeType="String"/>
+        <attribute name="fullExecution" optional="YES" attributeType="String"/>
+        <attribute name="icon" optional="YES" attributeType="String"/>
+        <attribute name="image1" optional="YES" attributeType="String"/>
+        <attribute name="image2" optional="YES" attributeType="String"/>
+        <attribute name="instruction" optional="YES" attributeType="String"/>
+        <attribute name="isCircuit" optional="YES" attributeType="Boolean" usesScalarValueType="NO"/>
+        <attribute name="isDone" optional="YES" attributeType="Boolean" defaultValueString="0.0" usesScalarValueType="NO"/>
+        <attribute name="isHistory" optional="YES" attributeType="Boolean" usesScalarValueType="NO"/>
+        <attribute name="load" optional="YES" attributeType="String"/>
+        <attribute name="muscle" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="order" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO"/>
+        <attribute name="repeat" optional="YES" attributeType="String"/>
+        <attribute name="rest" optional="YES" attributeType="String"/>
+        <attribute name="serie" optional="YES" attributeType="String"/>
+        <attribute name="trainingID" optional="YES" attributeType="String"/>
+        <attribute name="treineeID" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <attribute name="video" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="ExerciseIcons" representedClassName="ExerciseIcons" syncable="YES">
+        <attribute name="iconID" optional="YES" attributeType="String"/>
+        <attribute name="iconImage" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Exercises" representedClassName="Exercises" syncable="YES">
+        <attribute name="circuitID" optional="YES" attributeType="String"/>
+        <attribute name="exerciseID" optional="YES" attributeType="String"/>
+        <attribute name="fullDescription" optional="YES" attributeType="String"/>
+        <attribute name="fullExecution" optional="YES" attributeType="String"/>
+        <attribute name="icon" optional="YES" attributeType="String"/>
+        <attribute name="image1" optional="YES" attributeType="String"/>
+        <attribute name="image2" optional="YES" attributeType="String"/>
+        <attribute name="instruction" optional="YES" attributeType="String"/>
+        <attribute name="isCircuit" optional="YES" attributeType="Boolean" usesScalarValueType="NO"/>
+        <attribute name="isDone" optional="YES" attributeType="Boolean" defaultValueString="0.0" usesScalarValueType="NO"/>
+        <attribute name="isHistory" optional="YES" attributeType="Boolean" usesScalarValueType="NO"/>
+        <attribute name="load" optional="YES" attributeType="String"/>
+        <attribute name="muscle" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="notes" optional="YES" attributeType="String"/>
+        <attribute name="order" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO"/>
+        <attribute name="publickey" optional="YES" attributeType="String"/>
+        <attribute name="relexercise_id" optional="YES" attributeType="String"/>
+        <attribute name="repeat" optional="YES" attributeType="String"/>
+        <attribute name="rest" optional="YES" attributeType="String"/>
+        <attribute name="serie" optional="YES" attributeType="String"/>
+        <attribute name="trainingID" optional="YES" attributeType="String"/>
+        <attribute name="treineeID" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <attribute name="video" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="ExercisesTrainerAccount" representedClassName="ExercisesTrainerAccount" syncable="YES">
+        <attribute name="exerciseID" optional="YES" attributeType="String"/>
+        <attribute name="fullDescription" optional="YES" attributeType="String"/>
+        <attribute name="fullExecution" optional="YES" attributeType="String"/>
+        <attribute name="icon" optional="YES" attributeType="String"/>
+        <attribute name="image1" optional="YES" attributeType="String"/>
+        <attribute name="image2" optional="YES" attributeType="String"/>
+        <attribute name="instruction" optional="YES" attributeType="String"/>
+        <attribute name="isCircuit" optional="YES" attributeType="Boolean" usesScalarValueType="NO"/>
+        <attribute name="isDone" optional="YES" attributeType="Boolean" defaultValueString="0.0" usesScalarValueType="NO"/>
+        <attribute name="isHistory" optional="YES" attributeType="Boolean" usesScalarValueType="NO"/>
+        <attribute name="load" optional="YES" attributeType="String"/>
+        <attribute name="muscle" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="order" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO"/>
+        <attribute name="owner" optional="YES" attributeType="String"/>
+        <attribute name="publickey" optional="YES" attributeType="String"/>
+        <attribute name="repeat" optional="YES" attributeType="String"/>
+        <attribute name="rest" optional="YES" attributeType="String"/>
+        <attribute name="serie" optional="YES" attributeType="String"/>
+        <attribute name="trainingID" optional="YES" attributeType="String"/>
+        <attribute name="treineeID" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <attribute name="video" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="ExerciseTypes" representedClassName="ExerciseTypes" syncable="YES">
+        <attribute name="typeDescription" optional="YES" attributeType="String"/>
+        <attribute name="typeID" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="FeaturedImages" representedClassName="FeaturedImages" syncable="YES">
+        <attribute name="imagesCount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO"/>
+        <attribute name="isVerified" optional="YES" attributeType="Boolean" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="History" representedClassName="History" syncable="YES">
+        <attribute name="endDate" optional="YES" attributeType="String"/>
+        <attribute name="isClass" optional="YES" attributeType="Boolean" usesScalarValueType="NO"/>
+        <attribute name="isSync" optional="YES" attributeType="Boolean" usesScalarValueType="NO"/>
+        <attribute name="trainingID" optional="YES" attributeType="String"/>
+        <attribute name="trainingName" optional="YES" attributeType="String"/>
+        <attribute name="treineeID" optional="YES" attributeType="String"/>
+        <attribute name="userDescription" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="InAppProducts" representedClassName="InAppProducts" syncable="YES">
+        <attribute name="descricao" optional="YES" attributeType="String"/>
+        <attribute name="image_product" optional="YES" attributeType="String"/>
+        <attribute name="image_store" optional="YES" attributeType="String"/>
+        <attribute name="isonlineadvisor" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="preco" optional="YES" attributeType="String"/>
+        <attribute name="product_id" optional="YES" attributeType="String"/>
+        <attribute name="response_days" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="status" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="titulo" optional="YES" attributeType="String"/>
+        <attribute name="training_id" optional="YES" attributeType="String"/>
+        <attribute name="video" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="InAppTransactions" representedClassName="InAppTransactions" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="String"/>
+        <attribute name="digitalproduct_id" optional="YES" attributeType="String"/>
+        <attribute name="expiration" optional="YES" attributeType="String"/>
+        <attribute name="image_product" optional="YES" attributeType="String"/>
+        <attribute name="image_store" optional="YES" attributeType="String"/>
+        <attribute name="isnormaltraining" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isonlineadvisor" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isSync" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="price" optional="YES" attributeType="String"/>
+        <attribute name="product_id" optional="YES" attributeType="String"/>
+        <attribute name="response_days" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="sale_video" optional="YES" attributeType="String"/>
+        <attribute name="showanamnese" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="training_description" optional="YES" attributeType="String"/>
+        <attribute name="training_id" optional="YES" attributeType="String"/>
+        <attribute name="training_name" optional="YES" attributeType="String"/>
+        <attribute name="transaction_id" optional="YES" attributeType="String"/>
+        <attribute name="welcome_video" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="LastUpdates" representedClassName="LastUpdates" syncable="YES">
+        <attribute name="blog" optional="YES" attributeType="String"/>
+        <attribute name="chat" optional="YES" attributeType="String"/>
+        <attribute name="classschedule" optional="YES" attributeType="String"/>
+        <attribute name="design" optional="YES" attributeType="String"/>
+        <attribute name="featuredImages" optional="YES" attributeType="String"/>
+        <attribute name="radio" optional="YES" attributeType="String"/>
+        <attribute name="trainee" optional="YES" attributeType="String"/>
+        <attribute name="trainerInfo" optional="YES" attributeType="String"/>
+        <attribute name="training" optional="YES" attributeType="String"/>
+        <attribute name="userProfile" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Messages" representedClassName="Messages" syncable="YES">
+        <attribute name="apiKey" optional="YES" attributeType="String"/>
+        <attribute name="created" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="isSync" optional="YES" attributeType="Boolean" usesScalarValueType="NO"/>
+        <attribute name="message" optional="YES" attributeType="String"/>
+        <attribute name="messageID" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="receiverID" optional="YES" attributeType="String"/>
+        <attribute name="senderID" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Notes" representedClassName="Notes" syncable="YES">
+        <attribute name="exerciseID" optional="YES" attributeType="String"/>
+        <attribute name="textNote" optional="YES" attributeType="String"/>
+        <attribute name="trainingID" optional="YES" attributeType="String"/>
+        <attribute name="userID" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="PersonalTreinees" representedClassName="PersonalTreinees" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="firstName" optional="YES" attributeType="String"/>
+        <attribute name="image" optional="YES" attributeType="String"/>
+        <attribute name="lastName" optional="YES" attributeType="String"/>
+        <attribute name="lastUpdate" optional="YES" attributeType="String"/>
+        <attribute name="traineeStatus" optional="YES" attributeType="String"/>
+        <attribute name="trainerID" optional="YES" attributeType="String"/>
+        <attribute name="treineeID" optional="YES" attributeType="String"/>
+        <attribute name="unreadMessages" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="QuestionsD" representedClassName="QuestionsD" syncable="YES">
+        <attribute name="d01" optional="YES" attributeType="String"/>
+        <attribute name="d02" optional="YES" attributeType="String"/>
+        <attribute name="d03" optional="YES" attributeType="String"/>
+        <attribute name="d04" optional="YES" attributeType="String"/>
+        <attribute name="d05" optional="YES" attributeType="String"/>
+        <attribute name="d06" optional="YES" attributeType="String"/>
+        <attribute name="d07" optional="YES" attributeType="String"/>
+        <attribute name="d08" optional="YES" attributeType="String"/>
+        <attribute name="d09" optional="YES" attributeType="String"/>
+        <attribute name="d10" optional="YES" attributeType="String"/>
+        <attribute name="d11" optional="YES" attributeType="String"/>
+        <attribute name="d12" optional="YES" attributeType="String"/>
+        <attribute name="d13" optional="YES" attributeType="String"/>
+        <attribute name="d14" optional="YES" attributeType="String"/>
+        <attribute name="d15" optional="YES" attributeType="String"/>
+        <attribute name="d16" optional="YES" attributeType="String"/>
+        <attribute name="d17" optional="YES" attributeType="String"/>
+        <attribute name="d18" optional="YES" attributeType="String"/>
+        <attribute name="d19" optional="YES" attributeType="String"/>
+        <attribute name="d20" optional="YES" attributeType="String"/>
+        <attribute name="dstatus" optional="YES" attributeType="String"/>
+        <attribute name="qd01" optional="YES" attributeType="String"/>
+        <attribute name="qd02" optional="YES" attributeType="String"/>
+        <attribute name="qd03" optional="YES" attributeType="String"/>
+        <attribute name="qd04" optional="YES" attributeType="String"/>
+        <attribute name="qd05" optional="YES" attributeType="String"/>
+        <attribute name="qd06" optional="YES" attributeType="String"/>
+        <attribute name="qd07" optional="YES" attributeType="String"/>
+        <attribute name="qd08" optional="YES" attributeType="String"/>
+        <attribute name="qd09" optional="YES" attributeType="String"/>
+        <attribute name="qd10" optional="YES" attributeType="String"/>
+        <attribute name="qd11" optional="YES" attributeType="String"/>
+        <attribute name="qd12" optional="YES" attributeType="String"/>
+        <attribute name="qd13" optional="YES" attributeType="String"/>
+        <attribute name="qd14" optional="YES" attributeType="String"/>
+        <attribute name="qd15" optional="YES" attributeType="String"/>
+        <attribute name="qd16" optional="YES" attributeType="String"/>
+        <attribute name="qd17" optional="YES" attributeType="String"/>
+        <attribute name="qd18" optional="YES" attributeType="String"/>
+        <attribute name="qd19" optional="YES" attributeType="String"/>
+        <attribute name="qd20" optional="YES" attributeType="String"/>
+        <attribute name="training_id" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="QuestionsE" representedClassName="QuestionsE" syncable="YES">
+        <attribute name="e01" optional="YES" attributeType="String"/>
+        <attribute name="e02" optional="YES" attributeType="String"/>
+        <attribute name="e03" optional="YES" attributeType="String"/>
+        <attribute name="e04" optional="YES" attributeType="String"/>
+        <attribute name="e05" optional="YES" attributeType="String"/>
+        <attribute name="e06" optional="YES" attributeType="String"/>
+        <attribute name="e07" optional="YES" attributeType="String"/>
+        <attribute name="e08" optional="YES" attributeType="String"/>
+        <attribute name="e09" optional="YES" attributeType="String"/>
+        <attribute name="e10" optional="YES" attributeType="String"/>
+        <attribute name="e11" optional="YES" attributeType="String"/>
+        <attribute name="e12" optional="YES" attributeType="String"/>
+        <attribute name="e13" optional="YES" attributeType="String"/>
+        <attribute name="e14" optional="YES" attributeType="String"/>
+        <attribute name="e15" optional="YES" attributeType="String"/>
+        <attribute name="e16" optional="YES" attributeType="String"/>
+        <attribute name="e17" optional="YES" attributeType="String"/>
+        <attribute name="e18" optional="YES" attributeType="String"/>
+        <attribute name="e19" optional="YES" attributeType="String"/>
+        <attribute name="e20" optional="YES" attributeType="String"/>
+        <attribute name="estatus" optional="YES" attributeType="String"/>
+        <attribute name="qe01" optional="YES" attributeType="String"/>
+        <attribute name="qe02" optional="YES" attributeType="String"/>
+        <attribute name="qe03" optional="YES" attributeType="String"/>
+        <attribute name="qe04" optional="YES" attributeType="String"/>
+        <attribute name="qe05" optional="YES" attributeType="String"/>
+        <attribute name="qe06" optional="YES" attributeType="String"/>
+        <attribute name="qe07" optional="YES" attributeType="String"/>
+        <attribute name="qe08" optional="YES" attributeType="String"/>
+        <attribute name="qe09" optional="YES" attributeType="String"/>
+        <attribute name="qe10" optional="YES" attributeType="String"/>
+        <attribute name="qe11" optional="YES" attributeType="String"/>
+        <attribute name="qe12" optional="YES" attributeType="String"/>
+        <attribute name="qe13" optional="YES" attributeType="String"/>
+        <attribute name="qe14" optional="YES" attributeType="String"/>
+        <attribute name="qe15" optional="YES" attributeType="String"/>
+        <attribute name="qe16" optional="YES" attributeType="String"/>
+        <attribute name="qe17" optional="YES" attributeType="String"/>
+        <attribute name="qe18" optional="YES" attributeType="String"/>
+        <attribute name="qe19" optional="YES" attributeType="String"/>
+        <attribute name="qe20" optional="YES" attributeType="String"/>
+        <attribute name="training_id" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="QuestionsP" representedClassName="QuestionsP" syncable="YES">
+        <attribute name="p01" optional="YES" attributeType="String"/>
+        <attribute name="p02" optional="YES" attributeType="String"/>
+        <attribute name="p03" optional="YES" attributeType="String"/>
+        <attribute name="p04" optional="YES" attributeType="String"/>
+        <attribute name="p05" optional="YES" attributeType="String"/>
+        <attribute name="p06" optional="YES" attributeType="String"/>
+        <attribute name="p07" optional="YES" attributeType="String"/>
+        <attribute name="p08" optional="YES" attributeType="String"/>
+        <attribute name="p09" optional="YES" attributeType="String"/>
+        <attribute name="p10" optional="YES" attributeType="String"/>
+        <attribute name="p11" optional="YES" attributeType="String"/>
+        <attribute name="p12" optional="YES" attributeType="String"/>
+        <attribute name="p13" optional="YES" attributeType="String"/>
+        <attribute name="p14" optional="YES" attributeType="String"/>
+        <attribute name="p15" optional="YES" attributeType="String"/>
+        <attribute name="p16" optional="YES" attributeType="String"/>
+        <attribute name="p17" optional="YES" attributeType="String"/>
+        <attribute name="p18" optional="YES" attributeType="String"/>
+        <attribute name="p19" optional="YES" attributeType="String"/>
+        <attribute name="p20" optional="YES" attributeType="String"/>
+        <attribute name="pstatus" optional="YES" attributeType="String"/>
+        <attribute name="qp01" optional="YES" attributeType="String"/>
+        <attribute name="qp02" optional="YES" attributeType="String"/>
+        <attribute name="qp03" optional="YES" attributeType="String"/>
+        <attribute name="qp04" optional="YES" attributeType="String"/>
+        <attribute name="qp05" optional="YES" attributeType="String"/>
+        <attribute name="qp06" optional="YES" attributeType="String"/>
+        <attribute name="qp07" optional="YES" attributeType="String"/>
+        <attribute name="qp08" optional="YES" attributeType="String"/>
+        <attribute name="qp09" optional="YES" attributeType="String"/>
+        <attribute name="qp10" optional="YES" attributeType="String"/>
+        <attribute name="qp11" optional="YES" attributeType="String"/>
+        <attribute name="qp12" optional="YES" attributeType="String"/>
+        <attribute name="qp13" optional="YES" attributeType="String"/>
+        <attribute name="qp14" optional="YES" attributeType="String"/>
+        <attribute name="qp15" optional="YES" attributeType="String"/>
+        <attribute name="qp16" optional="YES" attributeType="String"/>
+        <attribute name="qp17" optional="YES" attributeType="String"/>
+        <attribute name="qp18" optional="YES" attributeType="String"/>
+        <attribute name="qp19" optional="YES" attributeType="String"/>
+        <attribute name="qp20" optional="YES" attributeType="String"/>
+        <attribute name="training_id" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="QuestionsQ" representedClassName="QuestionsQ" syncable="YES">
+        <attribute name="q01" optional="YES" attributeType="String"/>
+        <attribute name="q02" optional="YES" attributeType="String"/>
+        <attribute name="q03" optional="YES" attributeType="String"/>
+        <attribute name="q04" optional="YES" attributeType="String"/>
+        <attribute name="q05" optional="YES" attributeType="String"/>
+        <attribute name="q06" optional="YES" attributeType="String"/>
+        <attribute name="q07" optional="YES" attributeType="String"/>
+        <attribute name="q08" optional="YES" attributeType="String"/>
+        <attribute name="q09" optional="YES" attributeType="String"/>
+        <attribute name="q10" optional="YES" attributeType="String"/>
+        <attribute name="q11" optional="YES" attributeType="String"/>
+        <attribute name="q12" optional="YES" attributeType="String"/>
+        <attribute name="q13" optional="YES" attributeType="String"/>
+        <attribute name="q14" optional="YES" attributeType="String"/>
+        <attribute name="q15" optional="YES" attributeType="String"/>
+        <attribute name="q16" optional="YES" attributeType="String"/>
+        <attribute name="q17" optional="YES" attributeType="String"/>
+        <attribute name="q18" optional="YES" attributeType="String"/>
+        <attribute name="q19" optional="YES" attributeType="String"/>
+        <attribute name="q20" optional="YES" attributeType="String"/>
+        <attribute name="qq01" optional="YES" attributeType="String"/>
+        <attribute name="qq02" optional="YES" attributeType="String"/>
+        <attribute name="qq03" optional="YES" attributeType="String"/>
+        <attribute name="qq04" optional="YES" attributeType="String"/>
+        <attribute name="qq05" optional="YES" attributeType="String"/>
+        <attribute name="qq06" optional="YES" attributeType="String"/>
+        <attribute name="qq07" optional="YES" attributeType="String"/>
+        <attribute name="qq08" optional="YES" attributeType="String"/>
+        <attribute name="qq09" optional="YES" attributeType="String"/>
+        <attribute name="qq10" optional="YES" attributeType="String"/>
+        <attribute name="qq11" optional="YES" attributeType="String"/>
+        <attribute name="qq12" optional="YES" attributeType="String"/>
+        <attribute name="qq13" optional="YES" attributeType="String"/>
+        <attribute name="qq14" optional="YES" attributeType="String"/>
+        <attribute name="qq15" optional="YES" attributeType="String"/>
+        <attribute name="qq16" optional="YES" attributeType="String"/>
+        <attribute name="qq17" optional="YES" attributeType="String"/>
+        <attribute name="qq18" optional="YES" attributeType="String"/>
+        <attribute name="qq19" optional="YES" attributeType="String"/>
+        <attribute name="qq20" optional="YES" attributeType="String"/>
+        <attribute name="qstatus" optional="YES" attributeType="String"/>
+        <attribute name="training_id" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Radio" representedClassName="Radio" syncable="YES">
+        <attribute name="hasRadio" optional="YES" attributeType="Boolean" usesScalarValueType="NO"/>
+        <attribute name="key1" optional="YES" attributeType="String"/>
+        <attribute name="key2" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="TrainerInfo" representedClassName="TrainerInfo" syncable="YES">
+        <attribute name="biography" optional="YES" attributeType="String"/>
+        <attribute name="birthday" optional="YES" attributeType="String"/>
+        <attribute name="cnpj" optional="YES" attributeType="String"/>
+        <attribute name="cref" optional="YES" attributeType="String"/>
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="facebook" optional="YES" attributeType="String"/>
+        <attribute name="firstName" optional="YES" attributeType="String"/>
+        <attribute name="gender" optional="YES" attributeType="String"/>
+        <attribute name="image" optional="YES" attributeType="String"/>
+        <attribute name="lastName" optional="YES" attributeType="String"/>
+        <attribute name="phone" optional="YES" attributeType="String"/>
+        <attribute name="twitter" optional="YES" attributeType="String"/>
+        <attribute name="website" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Trainers" representedClassName="Trainers" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="firstName" optional="YES" attributeType="String"/>
+        <attribute name="lastName" optional="YES" attributeType="String"/>
+        <attribute name="trainerID" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Training" representedClassName="Training" syncable="YES">
+        <attribute name="difficulty" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO"/>
+        <attribute name="expireDate" optional="YES" attributeType="String"/>
+        <attribute name="fullDescription" optional="YES" attributeType="String"/>
+        <attribute name="isHistory" optional="YES" attributeType="Boolean" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="order" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO"/>
+        <attribute name="publickey" optional="YES" attributeType="String"/>
+        <attribute name="serieDateEnd" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="serieDateInit" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="serieIsLock" optional="YES" attributeType="Integer 32" usesScalarValueType="YES"/>
+        <attribute name="serieOnOffStatus" optional="YES" attributeType="String"/>
+        <attribute name="training_id" optional="YES" attributeType="String"/>
+        <attribute name="trainingID" optional="YES" attributeType="String"/>
+        <attribute name="treineeID" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="TrainingTrainerAccount" representedClassName="TrainingTrainerAccount" syncable="YES">
+        <attribute name="difficulty" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="fullDescription" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="publickey" optional="YES" attributeType="String"/>
+        <attribute name="trainingID" optional="YES" attributeType="String"/>
+        <attribute name="treineeID" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES">
+        <attribute name="apiKey" optional="YES" attributeType="String"/>
+        <attribute name="birthday" optional="YES" attributeType="String"/>
+        <attribute name="createAt" optional="YES" attributeType="String"/>
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="firstName" optional="YES" attributeType="String"/>
+        <attribute name="gender" optional="YES" attributeType="String"/>
+        <attribute name="height" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="NO"/>
+        <attribute name="image" optional="YES" attributeType="String"/>
+        <attribute name="lastName" optional="YES" attributeType="String"/>
+        <attribute name="level" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO"/>
+        <attribute name="trainerID" optional="YES" attributeType="String"/>
+        <attribute name="userID" optional="YES" attributeType="String"/>
+        <attribute name="weight" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="NO"/>
+    </entity>
+    <elements>
+        <element name="Blog" positionX="-911" positionY="188" width="128" height="73"/>
+        <element name="BlogFeeds" positionX="-1044" positionY="-72" width="128" height="135"/>
+        <element name="Chat" positionX="-1244" positionY="-22" width="128" height="58"/>
+        <element name="ClassSchedule" positionX="-1044" positionY="-72" width="128" height="60"/>
+        <element name="ClassScheduleItem" positionX="-1244" positionY="225" width="128" height="178"/>
+        <element name="Design" positionX="-911" positionY="50" width="128" height="103"/>
+        <element name="ExerciseAccount" positionX="-1080" positionY="255" width="128" height="373"/>
+        <element name="ExerciseIcons" positionX="-1035" positionY="-63" width="128" height="75"/>
+        <element name="Exercises" positionX="-576" positionY="5" width="128" height="420"/>
+        <element name="ExercisesTrainerAccount" positionX="-918" positionY="299" width="128" height="390"/>
+        <element name="ExerciseTypes" positionX="-1026" positionY="-54" width="128" height="75"/>
+        <element name="FeaturedImages" positionX="-747" positionY="-55" width="128" height="73"/>
+        <element name="History" positionX="-749" positionY="-216" width="128" height="150"/>
+        <element name="InAppProducts" positionX="-1035" positionY="-63" width="128" height="210"/>
+        <element name="InAppTransactions" positionX="-1026" positionY="-54" width="128" height="313"/>
+        <element name="LastUpdates" positionX="-1080" positionY="-216" width="128" height="193"/>
+        <element name="Messages" positionX="-1244" positionY="-214" width="128" height="163"/>
+        <element name="Notes" positionX="-747" positionY="38" width="128" height="103"/>
+        <element name="PersonalTreinees" positionX="-1244" positionY="59" width="128" height="180"/>
+        <element name="QuestionsD" positionX="-1044" positionY="-72" width="128" height="675"/>
+        <element name="QuestionsE" positionX="-1035" positionY="-63" width="128" height="675"/>
+        <element name="QuestionsP" positionX="-1026" positionY="-54" width="128" height="675"/>
+        <element name="QuestionsQ" positionX="-1035" positionY="-63" width="128" height="675"/>
+        <element name="Radio" positionX="-749" positionY="171" width="128" height="88"/>
+        <element name="TrainerInfo" positionX="-911" positionY="-216" width="128" height="238"/>
+        <element name="Trainers" positionX="-1044" positionY="-72" width="128" height="105"/>
+        <element name="Training" positionX="-576" positionY="-213" width="128" height="255"/>
+        <element name="TrainingTrainerAccount" positionX="-1035" positionY="-63" width="128" height="135"/>
+        <element name="User" positionX="-1080" positionY="-13" width="128" height="238"/>
+    </elements>
+</model>

@@ -1,0 +1,126 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2511
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red163\green21\blue21;\red255\green255\blue255;\red0\green0\blue255;
+\red0\green0\blue0;\red196\green26\blue22;\red24\green24\blue28;\red252\green70\blue81;}
+{\*\expandedcolortbl;;\csgenericrgb\c63900\c8200\c8200;\csgenericrgb\c100000\c100000\c100000;\csgenericrgb\c0\c0\c100000;
+\csgenericrgb\c0\c0\c0;\csgenericrgb\c77000\c10200\c8600;\csgenericrgb\c9472\c9472\c11000;\csgenericrgb\c98824\c27451\c31765;}
+\paperw12240\paperh15840\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Build 10 (09/10)\
+\
+Modifica\'e7\'f5es e Melhorias:\
+1- AssessoriaTableViewController.m:110, Texto:
+\f1\fs22 \cf2 \cb3 Seu treino ser\'e1 baixado imediatamente.
+\f0\fs24 \cf0 \cb1  \
+\
+\
+Build 11, (10/10)\
+1- Ajuste altura da descri\'e7\'e3o de produtos no Xcode, Assessoria Store Scene pois cortava texto final\
+2- Mudan\'e7a para 
+\f1\fs22 \cf4 \cb3 self\cf5 .navigationController.navigationBar.translucent = \cf4 NO\cf5 ;\
+\
+
+\f0\fs24 \cf0 \cb1 \
+Build 12, (14/10)\
+1- Troca POD XCDYOUTUBEKIT (podfile) pois certos v\'eddeos n\'d5 REPRODUZEM\
+2- Corre\'e7\'e3o na tela de detalhes de exerc\'edcios no Sotoryboard e c\'f3digo pois icones de carga estavam desalinhados e \'edcone de Play n\'e3o aparecia\
+\
+Build 13 (18/10)\
+- Corre\'e7\'e3o dos textos nos question\'e1rios a seguir:\
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+
+\f1 \cf6 \cb3 1- Deseja concluir e enviar suas respostas agora?\
+2- @"9) Descreva o ambiente onde pretende treinar com a o treino elaborado pela assessoria: Academia, Condom\'ednio, Parque..."\cf5 ];\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf0 \cb1 Build 15 (23/10)
+\f1 \cf5 \cb3 \
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+\cf5 1- For\'e7a Login na compra em AssessiriaTableViewController.m linha 141\
+\pard\tx667\pardeftab667\pardirnatural\partightenfactor0
+\cf5 2- Testar se productid==null antes de registrar compras no servidor utililityclass.m linha 471\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf0 \cb1 \
+Build 16 (25/10)\
+1- V\'e1rias altera\'e7\'f5es em cadastro.m para validar os campos e liberar o bot\'e3o de Criar. Copie o arquivo inteiro para os demais projetos\
+2- Aumento do tamanho dos textos dos bot\'f5es cadastro, login e Criar no storyboard\
+\
+Build 17 (27/10)\
+1- V\'e1rias altera\'e7\'f5es de storyboard:\
+- MeusTreinosViewController: retirada na linha com nome Meu Treino\
+- AssessoriaTableViewController: Corre\'e7\'e3o de propor\'e7\'e3o da Imagem para 375x210\
+- StoreViewController: Corre\'e7\'e3o da propor\'e7\'e3o de imagem para 369x152 e linha 156, espa\'e7\'e3o lateral e vertical 3,3,3,3\
+C\'f3digo apenas\
+- ListAllViewController:527,528 : Volta do texto que vem do painel no nome e descri\'e7\'e3o do treino\
+\
+Build 18 (28/10)\
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+
+\f1 \cf5 \cb3 - Retirado item do Build 15 (1- For\'e7a Login na compra em AssessiriaTableViewController.m linha 141)\
+devido a rejei\'e7\'e3o na Apple.\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf0 \cb1 Build 19 (06/11)\
+- Troca da palavra Onlie para Online\
+- Inclus\'e3o das imagens Placeholder_store_2 com dimens\'e3o corrigida para\
+- Corre\'e7\'e3o na duplica\'e7\'e3o de treinos (v\'e1rios arquivos) MeusTreinos, Meus InApp e coredata.m\
+- Corre\'e7\'e3o nas anota\'e7\'f5es de alunos que se espalhavam entre os exerc\'edcios\
+- Corre\'e7\'e3o das tela de lista de produto que faltava delimitadoes e dava erro no iPhone 8+\
+- Separa\'e7\'e3o na tela de detalhes de produto do bot\'e3o COMPRAR, aumento de altura da linha superior\
+- ListAll adicionar na linha 500 dowloandRegularTraining, download ShelfTraining\
+\pard\tx667\pardeftab667\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+Build 20 (14/11)\
+- Corre\'e7\'e3o em outro App for\'e7ou cria\'e7\'e3o deste Build, nada a fazer\
+\
+\
+$$$$$$$$$$$\
+Build 22 (14/02/19)\
+-Integra\'e7\'e3o das imagens da loja no app para evitar downloads e erros durante revis\'e3o na Apple\
+\
+Build 23 (20/02/19)\
+-Ativa\'e7\'e3o do Bluettoth em audios em AppDelegate.m linha 90-94  OK\
+- Central de notifica\'e7\'e3o em AppDelegate.m OK\
+- For\'e7ar permiss\'e3o do hsChat em ListAllViewController.m Linhas 172 173  OK\
+- Iniciar ANTES  o  Coredata Service em  ListAllViewController.m Linhas 152 153 OK\
+\
+Build 24 (01/04/19)\
+V\'e1rias adequa\'e7\'f5es para mudan\'e7a de SWIFT e XCODE OK\
+\pard\tx667\pardeftab667\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx667\pardeftab667\pardirnatural\partightenfactor0
+\cf0 Build 25 (01/04/19)\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 Corre\'e7\'e3o para tela Landscape no v\'eddeo com exerc\'edcios OK\
+\
+Build 26 (09/05/19)\
+- V\'e1rias Corre\'e7\'f5es da finaliza\'e7\'e3o de s\'e9rie em serieViewController.m: copiar arquivo  OK\
+\
+Build 28 (14/05/19)\
+- Crash no formul\'e1rio Question\'e1rio, fatatava checkstring() nas linhas 839 a 841 em questionaryViewControle.m OK\
+- Corre\'e7\'e3o na dimens\'e3o (constraints) do separador Hist\'f3rico|Atualizar na s\'e9rie, em treino pessoal OK\
+\
+Build 35 (30/01/2020)\
+- Retirada de Timer em ListAllViewControler e MeusTreinosViewController\
+- Inser\'e7\'e3o de Leitura de mensagens em ListAllViewControler\
+- Inser\'e7\'e3o de contador de mensagens em AppDelegate : UnreadCounter\
+- Inser\'e7\'e3o de zerador de contador de mensagens em MessageVC : UnreadCounter\
+\
+Build 41 (20/03/2020)\
+- XCDYoutube versao 2.12.0\
+- Incluir cor para alertview\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 - Alterar 
+\f1\fs36 \cf3 \cb7 alertController.view.tintColor=[UIColor colorNamed: \cf8 @"myAlertTextColor"\cf3 ];\cf0 \cb1  em utilityclass.m 361
+\f0\fs24 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+}
